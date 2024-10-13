@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signupcss.css">
+</head>
+<body>
+    <div class="book-container">
+        <!-- Left side: Welcome message (like the left page of a book) -->
+        <div class="left-page">
+            <h1>Welcome!</h1>
+        </div>
+
+        <!-- Right side: Sign-up form (like the right page of a book) -->
+        <div class="right-page">
+            <h2>SIGN UP</h2>
+            <form id="signup-form">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="password">Set Password *</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Confirm Password *</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Sign Up</button>
+                <div class="alert">Thanks for sign up</div>
+            </form>
+            <div class="links">
+                <a href="#">Login</a> | <a href="#">Password Reset</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Place your script tag at the bottom -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

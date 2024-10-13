@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Container to represent a two-page book layout */
+.book-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+}
+
+/* Left page (Welcome page) */
+.left-page {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+}
+.alert{
+    width: 100%;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900;
+    display: none;
+}
+
+.left-page h1 {
+    font-size: 2rem;
+    color: #333;
+    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Right page (Sign-up form) */
+.right-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-page h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.right-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-page label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.right-page input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.right-page button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.right-page button:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
